@@ -1,0 +1,328 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('images/background_image.jpeg');
+    background-size: 1000px 900px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    opacity: 0.8;
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background_image.jpeg') no-repeat center center/cover;
+    opacity: 0.2; 
+    z-index: -1; 
+}
+
+.overlay-image {
+    position: absolute;
+    top: 75%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    width: 400px; 
+    height: auto; 
+    z-index: 1; 
+   
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white; 
+    padding: 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+}
+h1
+{
+    margin: 0;
+    color: blue;
+    text-shadow: 10%;
+    
+}
+.logopic{
+    margin-right: 10px; 
+    width: 130px;
+    height: 100px;
+}
+.rectangle{
+    position: absolute;
+    top: 69%; 
+    left: 63%; 
+    transform: translate(-50%, -50%); 
+    width: 600px;
+    height: 200px;
+    background-color: #6CEBFD; 
+    border-radius: 50px;
+    
+    z-index: 1; 
+}
+#learn {
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 80px;
+    cursor: pointer;
+    
+}
+
+#typing{
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 40px 7px;
+    cursor: pointer;
+}
+
+#contact{
+    background-color:#00C8FF; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 7px;
+    cursor: pointer;
+}
+
+#activation{
+    background-color:#00C8FF; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 7px;
+    cursor: pointer;
+    
+}
+
+#buy{
+    background-color:#00C8FF; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 7px;
+    cursor: pointer;
+    
+}
+#about{
+    background-color: #00C8FF; 
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 7px;
+    cursor: pointer;
+    
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; 
+    padding-top: 450px;
+    padding-left: 900px;
+    position: absolute;
+}
+
+.icon {
+    width: 40px; 
+    height: auto; 
+    
+}
+.top-buttons{
+    gap: 10px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#English{
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 20px;
+    cursor: pointer;
+    
+}
+#Hindi{
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 20px;
+    cursor: pointer;
+    
+}
+#Remmin{
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 30px;
+    cursor: pointer;
+    left: 30px;
+}
+.box{
+    position: absolute;
+    top: 60%; 
+    left: 63%; 
+    transform: translate(-50%, -50%); 
+    width: 350px;
+    height: 400px;
+    background-color: #6CEBFD; 
+    border-radius: 50px;
+    
+    z-index: 1; 
+}
+.Submit{
+
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 40px;
+    cursor: pointer;
+}
+.home{
+    background-color: #FFA500; 
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 40px 7px;
+    cursor: pointer;
+}
+.formbuttons{
+    gap: 10px;
+    text-align: center;
+    padding-top: 60px;
+}
+.engrect{
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 650px;
+    height: 40px;
+    background-color: #6CEBFD; 
+    border-radius: 50px;
+    
+    z-index: 1; 
+}
+@media (max-width: 768px) {
+    .rectangle {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .overlay-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 8px 20px;
+    }
+
+    .logopic {
+        width: 100px;
+    }
+
+    .rectangle {
+        padding: 15px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+
+    .icon {
+        width: 30px;
+    }
+}
+.Time{
+    text-align:start;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+.timer{
+    scrollbar-highlight-color: chartreuse;
+    margin-top: 10px;
+}
