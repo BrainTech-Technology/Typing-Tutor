@@ -1,25 +1,37 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+} 
+
 
 .background-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
+    
     background-image: url('images/background_image.jpeg');
-    background-size: 1000px 900px; 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; 
-    opacity: 0.8;
+         /* Full height */
+        height: 100vh;
+    
+        /* Center and scale the image */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        /* Optional: Adding a fallback color */
+        background-color: #050404;
+    
+        /* Optional: If you want to fix the background image */
+        background-attachment: fixed;
+
+    
+    
+    
+
 }
 
 .background-container::before {
-    content: "";
+    /* content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -27,18 +39,26 @@ body, html {
     height: 100%;
     background: url('images/background_image.jpeg') no-repeat center center/cover;
     opacity: 0.2; 
-    z-index: -1; 
+    z-index: -1; */
+
+     
 }
 
 .overlay-image {
-    position: absolute;
+    /* position: absolute;
     top: 75%; 
     left: 25%; 
     transform: translate(-50%, -50%); 
     width: 400px; 
     height: auto; 
     z-index: 1; 
-    rotate: 30px;
+    transform: rotate(-30deg); */
+
+    position: fixed;
+    bottom: 10px;    /* Distance from the top */
+    left: 10px;   /* Distance from the left */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    transform: rotate(-30deg);
    
 }
 
@@ -164,18 +184,23 @@ h1
     
 }
 .social-icons {
-    display: flex;
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000; 
+    /* display: flex;
     justify-content: flex-start;
     gap: 10px; 
     padding-top: 450px;
     padding-left: 900px;
-    position: absolute;
+    position: absolute; */
 }
 
 .icon {
-    width: 40px; 
+    width: 50px; 
     height: auto; 
-    
+    padding: 5px;
 }
 .top-buttons{
     gap: 10px;
@@ -402,13 +427,22 @@ margin-left: 40%;
     gap: 20px;
 }
 .typingimage {
-    position: absolute;
+    /* position: absolute;
     top: 75%; 
     left: 25%; 
     transform: translate(-50%, -50%); 
     width: 400px; 
     height: auto; 
     z-index: 1; 
-    opacity: 0.5;
+    opacity: 0.5; */
+
+    position: fixed;
+    bottom: 10px;    /* Distance from the top */
+    left: 10px;   /* Distance from the left */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    transform: rotate(-30deg);
+    width: 400px; 
+    height: auto; 
+    opacity: 0.8;
    
 }
