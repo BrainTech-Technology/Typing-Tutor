@@ -346,8 +346,8 @@ h1
     padding: 10px 20px;
     border-radius: 10px;
     position: absolute;
-    top: 58%; 
-    left: 50%; 
+    top: 50%; 
+    left: 47%; 
     transform: translate(-50%, -50%); 
     width: 500px;
     height: 25px;
@@ -428,7 +428,7 @@ h1
     width: 550px;
     text-align: center;
     left: 400px;
-    top: 37%;
+    top: 32%;
     font-weight: 200;
     z-index: 2;
     position: fixed;
@@ -438,7 +438,7 @@ h1
     height: 100px;
     width: 550px;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 170px;
     left: 400px;
     z-index: 2;
     position: relative;
@@ -466,9 +466,9 @@ h1
     
 }
 .shiftbutton-test{
-    margin-left: 350px;
+    margin-left: 500px;
     gap: 30px;
-    position:absolute;
+    position:static;
     top:79%;
     left: 3%;
     gap: 20px;
@@ -517,7 +517,7 @@ z-index: 2;
 }
 .square{
     position: relative;
-    margin-top: -160px;
+    margin-top: -190px;
     top: 49%; 
     left: 80%; 
     transform: translate(-50%, -50%); 
@@ -528,6 +528,7 @@ z-index: 2;
     text-align: center;
     z-index: 2; 
     row-gap:1%;
+    padding: 20px;
 }
 .square h4,
 .square h5,
