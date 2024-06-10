@@ -325,6 +325,23 @@ h1
     z-index: 1;
     
 }
+.stats-contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 58%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 500px;
+    height: 25px;
+    background-color: #6CEBFD; 
+    border-radius: 50px;
+    z-index: 2;
+}
 
 .stat {
     text-align: center;
@@ -395,8 +412,8 @@ margin-left: 40%;
     height: 100px;
     width: 500px;
     text-align: center;
-    margin-left: 480px;
-    margin-top: 100px;
+    left: 400px;
+    top: 37%;
     font-weight: 200;
 }
 .textar{
@@ -404,8 +421,10 @@ margin-left: 40%;
     height: 100px;
     width: 500px;
     text-align: center;
-    margin-top: 2px;
-    margin-left: 480px;
+    margin-top: 140px;
+    left: 400px;
+    z-index: 2;
+    position: relative;
     
 }
 .centered-text-areas {
@@ -420,9 +439,19 @@ margin-left: 40%;
 }
 .shiftbuttons{
     margin-left: 500px;
+    gap: 50px;
+    position: relative;
+    top: 13%;
+    left: 3%;
+    gap: 20px;
+    z-index: 2;
+    
+}
+.shiftbutton-test{
+    margin-left: 350px;
     gap: 30px;
-    position: fixed;
-    top: 66%;
+    position:absolute;
+    top:79%;
     left: 3%;
     gap: 20px;
 }
