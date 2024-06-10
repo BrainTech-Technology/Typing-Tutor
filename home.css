@@ -30,8 +30,9 @@ body, html {
 
 }
 
-/*.background-container::before {
-     content: "";
+.background-container::before {
+    /* content: "";
+
     position: absolute;
     top: 0;
     left: 0;
@@ -39,10 +40,11 @@ body, html {
     height: 100%;
     background: url('images/background_image.jpeg') no-repeat center center/cover;
     opacity: 0.2; 
-    z-index: -1; 
+
+    z-index: -1; */
 
      
-}*/
+}*/*/
 
 .overlay-image {
     /* position: absolute;
@@ -333,8 +335,8 @@ h1
     padding: 10px 20px;
     border-radius: 10px;
     position: absolute;
-    top: 58%; 
-    left: 50%; 
+    top: 50%; 
+    left: 47%; 
     transform: translate(-50%, -50%); 
     width: 500px;
     height: 25px;
@@ -421,10 +423,10 @@ margin-left: 40%;
     height: 100px;
     width: 500px;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 170px;
     left: 400px;
     z-index: 2;
-    position: relative;
+    position: fixed;
     
 }
 .centered-text-areas {
@@ -448,9 +450,9 @@ margin-left: 40%;
     
 }
 .shiftbutton-test{
-    margin-left: 350px;
+    margin-left: 500px;
     gap: 30px;
-    position:absolute;
+    position:static;
     top:79%;
     left: 3%;
     gap: 20px;
@@ -475,3 +477,85 @@ margin-left: 40%;
     opacity: 0.8;
    
 }
+.typingbutton{
+    z-index: 2;
+    position: relative;
+}
+.divContainer{
+z-index: 2;
+}
+.stats{
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+}
+.shiftbutton{
+    margin-left: 450px;
+    gap: 5px;
+    position: relative;
+    top: 72%;
+    left: -5%;
+    z-index: 2;
+}
+.square{
+    position: relative;
+    margin-top: -190px;
+    top: 49%; 
+    left: 80%; 
+    transform: translate(-50%, -50%); 
+    width: 150px;
+    height: 172px;
+    background-color: hsl(187, 97%, 71%); 
+    border-radius: 50px;
+    text-align: center;
+    z-index: 2; 
+    row-gap:1%;
+    padding: 20px;
+}
+.square h4,
+.square h5,
+.square button {
+    margin: 13px 0;
+}
+.test-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    margin-top: -30px;
+    transform: translate(-50%, -50%); 
+    width: 700px;
+    height: 30px;
+    background-color: #6CEBFD; 
+    border-radius: 50px;
+    z-index: 2;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 500px; /* Adjust this to control the width of the form */
+    margin-right: 40px;
+}
+
+.form-group label {
+    width: 150px; /* Adjust as needed */
+    margin-right: 10px;
+    text-align: right;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+    

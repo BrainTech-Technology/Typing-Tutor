@@ -15,7 +15,7 @@
         </div>
         <div class="box">
             <div class="top-buttons" >
-                <form>
+                <form id="typingForm" onsubmit="return redirectToTest();">
                    
                     <div class="form-group">
                         <label for="name"><b>Name: </b></label>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="form-group">
                         <label for="test"><b>Test Type: </b></label>
-                        <select id="test" name="test" class="form-control">
+                        <select id="test" name="test" class="form-control"  onchange="redirectBasedOnTestType()">
                             <option value="Hindi">HINDI</option>
                             <option value="English">English</option>
                             <option value="Reemintangill">Reemintangill</option>
@@ -38,7 +38,7 @@
                         <input type="text" id="paragraph" name="paragraph" class="form-control">
                     </div>                    
                     <div class="typingbutton">
-                        <button type="button" class="Submit"  onclick="window.location.href='TestSubmit.html';"><b>Submit</b></button>
+                        <button type="submit" class="Submit"><b>Submit</b></button>
                         <button type="button" class="home" onclick="window.location.href='Home.html';"><b>Home</b></button>
                     </div>
                 </div>
@@ -55,6 +55,24 @@
         </div>
 
     </div>
-    <script src="app.js"></script>
+    <script>
+        function redirectToTest() {
+            const testType = document.getElementById('test').value;
+            let actionURL = '';
+
+            if (testType === 'Hindi') {
+                actionURL = 'TestSubmit.html';
+            } else if (testType === 'English') {
+                actionURL = 'EnglishTest.html';
+            } else {
+                return false; // Prevent form submission if no valid test type is selected
+            }
+
+            document.getElementById('typingForm').action = actionURL;
+            return true; // Allow form submission
+        }
+       
+
+    </script>
 </body>
 </html>
